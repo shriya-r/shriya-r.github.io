@@ -1,142 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Shriya Rajesh | Software Developer</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0d1117;
-      color: #e6edf3;
-      line-height: 1.6;
-    }
+<title>Shriya Rajesh | Software Engineer</title>
 
-    a {
-      color: #58a6ff;
-      text-decoration: none;
-    }
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
-    header {
-      padding: 60px 20px;
-      text-align: center;
-    }
+<style>
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #0d1117;
+  color: #e6edf3;
+  line-height: 1.6;
+}
 
-    h1 {
-      font-size: 3em;
-      margin-bottom: 10px;
-    }
+.hero {
+  text-align: center;
+  padding: 100px 20px 60px;
+}
 
-    h2 {
-      border-bottom: 1px solid #30363d;
-      padding-bottom: 5px;
-      margin-top: 40px;
-    }
+.hero h1 {
+  font-size: 3.5rem;
+}
 
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
-    }
+.hero span {
+  background: linear-gradient(90deg, #60a5fa, #a78bfa);
+  -webkit-background-clip: text;
+  color: transparent;
+}
 
-    .project {
-      margin-bottom: 20px;
-      padding: 15px;
-      border: 1px solid #30363d;
-      border-radius: 8px;
-    }
+.hero p {
+  color: #9ca3af;
+  margin-top: 10px;
+  font-size: 18px;
+}
 
-    .tags {
-      font-size: 0.9em;
-      color: #8b949e;
-    }
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
 
-    footer {
-      text-align: center;
-      padding: 20px;
-      color: #8b949e;
-    }
-  </style>
+h2 {
+  margin-top: 50px;
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+  border-bottom: 1px solid #30363d;
+  padding-bottom: 5px;
+}
+
+.project {
+  border: 1px solid #30363d;
+  border-radius: 10px;
+  padding: 18px;
+  margin-bottom: 15px;
+  transition: 0.2s;
+}
+
+.project:hover {
+  border-color: #58a6ff;
+  background: rgba(88,166,255,0.05);
+}
+
+.project a {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+}
+
+.project h3 {
+  margin: 0;
+}
+
+.links {
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.links a {
+  margin-right: 10px;
+  color: #58a6ff;
+}
+
+.item {
+  margin-bottom: 20px;
+}
+
+.item p {
+  margin: 5px 0;
+  color: #9ca3af;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #8b949e;
+}
+</style>
 </head>
 
 <body>
 
-<header>
-  <h1>Shriya Rajesh</h1>
-  <p>Software Developer | AI & Machine Learning | USC</p>
+<section class="hero">
+  <h1><span>Shriya Rajesh</span></h1>
+  <p>Software Engineer focused on AI, Machine Learning, and Scalable Systems</p>
   <p>
     <a href="https://github.com/shriya-r">GitHub</a> |
     <a href="https://linkedin.com/in/shriyarajesh/">LinkedIn</a> |
     <a href="mailto:srajesh@usc.edu">Email</a>
   </p>
-</header>
+</section>
 
 <div class="container">
-
-  <h2>About Me</h2>
-  <p>
-    I'm a Computer Science student at USC focused on building scalable software systems 
-    and AI-driven applications. My experience spans machine learning, distributed systems, 
-    and full-stack development, with a strong interest in applying AI to real-world problems.
-  </p>
 
   <h2>Projects</h2>
 
   <div class="project">
-    <h3>AI Image Upscaling</h3>
-    <p>
-      Implemented and evaluated deep learning models including EDSR, ESRGAN, and ESPCN 
-      using PSNR metrics to analyze performance tradeoffs.
-    </p>
-    <p class="tags">Python • Machine Learning • Computer Vision</p>
+    <a href="https://github.com/shriya-r/VerilogProject">
+      <h3>Whack-a-Mole FPGA Game</h3>
+      <p>
+        Designed and implemented a hardware-based game on a Nexys A7 FPGA using finite state machines, hardware timers, and VGA output for real-time gameplay. 
+        Implemented randomized mole placement using LFSR and debounced inputs for accurate scoring.
+      </p>
+    </a>
   </div>
 
   <div class="project">
-    <h3>Whack-a-Mole FPGA Game</h3>
-    <p>
-      Built a real-time hardware game using Verilog with VGA graphics, FSM logic, 
-      and randomized behavior via LFSR.
-    </p>
-    <p class="tags">Verilog • FPGA • Embedded Systems</p>
+    <a href="https://www.youtube.com/watch?v=jvdanU06gVg">
+      <h3>SoLyr (IoT Music Recognition)</h3>
+      <p>
+        Built an end-to-end IoT system that identifies songs from sung lyrics using Web Speech API and real-time WebSocket communication for server-side analysis.
+      </p>
+    </a>
   </div>
 
   <div class="project">
-    <h3>SoLyr (IoT Music Recognition)</h3>
-    <p>
-      Developed an IoT system that analyzes sung lyrics using WebSockets and speech-to-text APIs.
-    </p>
-    <p class="tags">JavaScript • IoT • WebSockets</p>
+    <a href="https://github.com/csci201team25/Campfire">
+      <h3>Campfire</h3>
+      <p>
+        Developed a scheduling platform that compares availability and suggests optimal meeting times and locations, with secure authentication and full-stack implementation.
+      </p>
+      <div class="links">
+        <a href="https://github.com/csci201team25/Campfire">GitHub</a>
+        <a href="https://www.youtube.com/watch?v=-K7YL43oxQQ">Demo</a>
+      </div>
+    </a>
   </div>
 
   <div class="project">
-    <h3>FireCheck</h3>
-    <p>
-      AI-powered fire prediction tool using real-time weather data APIs. 
-      Winner: Best Use of AI.
-    </p>
-    <p class="tags">JavaScript • APIs • AI</p>
+    <a href="https://github.com/shriya-r/AthenaHacks2025-FireCheck">
+      <h3>FireCheck (Hackathon Project)</h3>
+      <p>
+        Built an AI-powered fire prediction tool using real-time weather data APIs; won Best Use of AI at AthenaHacks.
+      </p>
+      <div class="links">
+        <a href="https://github.com/shriya-r/AthenaHacks2025-FireCheck">GitHub</a>
+        <a href="https://devpost.com/software/firecheck-ekjqb3">Devpost</a>
+      </div>
+    </a>
+  </div>
+
+  <div class="project">
+    <a href="https://github.com/shriya-r/HackSC-DAIN-Implementation">
+      <h3>SketchTune</h3>
+      <p>
+        Developed an application that analyzes drawings using the Claude model and recommends music based on inferred mood; awarded 3rd place and honorable mentions.
+      </p>
+      <div class="links">
+        <a href="https://github.com/shriya-r/HackSC-DAIN-Implementation">GitHub</a>
+        <a href="https://devpost.com/software/sketchtune">Devpost</a>
+      </div>
+    </a>
   </div>
 
   <h2>Experience</h2>
 
-  <p><strong>Software Developer – Silhouette</strong></p>
-  <p>
-    Built AWS-based backend services integrating Jira APIs with OAuth 2.0, 
-    improving system security and maintainability.
-  </p>
+  <div class="item">
+    <strong>Software Developer — Silhouette</strong>
+    <p>
+      Built AWS-based backend integrating Jira APIs with OAuth 2.0, implemented secure role-based access, and refactored codebase for maintainability. Debugged using CloudWatch and deployed via Lambda + API Gateway.
+    </p>
+  </div>
 
-  <p><strong>Researcher – Vilesov Group</strong></p>
-  <p>
-    Worked on infrared spectroscopy systems, improving data acquisition, 
-    signal processing, and system reliability.
-  </p>
+  <div class="item">
+    <strong>Researcher — Vilesov Group (Infrared Spectroscopy)</strong>
+    <p>
+      Enhanced LabVIEW-based data acquisition systems with configurable scan speeds, signal processing, and real-time debugging of hardware limitations including TCP and COM port issues.
+    </p>
+  </div>
+
+  <div class="item">
+    <strong>Researcher — Next Generation Digital Systems</strong>
+    <p>
+      Optimized SAT-solving heuristics using backtracking and unit propagation, and profiled performance using gprof to reduce computational overhead.
+    </p>
+  </div>
 
   <h2>Skills</h2>
   <p>
-    Python, C++, JavaScript, TypeScript, Java, SQL, AWS, Machine Learning, 
-    Distributed Systems, Full-Stack Development
+    Python, C++, JavaScript, TypeScript, Java, SQL, AWS, Machine Learning, Distributed Systems, Embedded Systems
   </p>
 
 </div>
