@@ -1,6 +1,6 @@
 # Shriya Rajesh — Portfolio
 
-Welcome to my personal portfolio website 🚀  
+Welcome to my personal portfolio website    
 This site highlights my work in **AI, software engineering, and systems development**.
 
 🔗 Live Site: https://shriya-r.github.io/  
@@ -9,7 +9,7 @@ This site highlights my work in **AI, software engineering, and systems developm
 
 ---
 
-## 👩‍💻 About Me
+## About Me
 
 I’m a Computer Science student at the University of Southern California with a strong interest in **AI/ML, distributed systems, and full-stack development**.
 
@@ -17,7 +17,7 @@ I enjoy building scalable systems and applying machine learning to real-world pr
 
 ---
 
-## 🚀 Featured Projects
+## Featured Projects
 
 ### 🔹 AI Image Upscaling
 - Implemented deep learning models including **EDSR, ESRGAN, and ESPCN**
@@ -49,7 +49,7 @@ I enjoy building scalable systems and applying machine learning to real-world pr
 
 ---
 
-## 💼 Experience Highlights
+## Experience Highlights
 
 - **Software Developer @ Silhouette**
   - Built AWS-based backend systems integrating Jira APIs with OAuth 2.0
@@ -65,7 +65,7 @@ I enjoy building scalable systems and applying machine learning to real-world pr
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 **Languages:**  
 Python, C++, JavaScript, TypeScript, Java, SQL  
@@ -75,7 +75,7 @@ AWS, Machine Learning, Distributed Systems, Full-Stack Development, IoT
 
 ---
 
-## 📚 Education
+## Education
 
 **University of Southern California (USC)**  
 B.S. Computer Engineering & Computer Science (2027)  
@@ -86,7 +86,7 @@ M.S. Computer Science (2027)
 
 ---
 
-## 🌐 Deployment
+## Deployment
 
 This site is deployed using **GitHub Pages**.
 
