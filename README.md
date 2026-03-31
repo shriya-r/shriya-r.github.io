@@ -42,7 +42,7 @@ I enjoy building scalable systems and applying machine learning to real-world pr
 
 ---
 
-### 🔹 FireCheck (Hackathon Winner 🏆)
+### 🔹 FireCheck (Hackathon Project)
 - Built an AI-powered fire prediction tool using **real-time weather data**
 - Won **Best Use of AI** at AthenaHacks  
 **Tech:** JavaScript, APIs, Machine Learning  
