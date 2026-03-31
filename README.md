@@ -3,9 +3,9 @@
 Welcome to my personal portfolio website    
 This site highlights my work in **AI, software engineering, and systems development**.
 
-🔗 Live Site: https://shriya-r.github.io/  
-🔗 GitHub: https://github.com/shriya-r  
-🔗 LinkedIn: https://linkedin.com/in/shriyarajesh/  
+ Live Site: https://shriya-r.github.io/  
+ GitHub: https://github.com/shriya-r  
+ LinkedIn: https://linkedin.com/in/shriyarajesh/  
 
 ---
 
