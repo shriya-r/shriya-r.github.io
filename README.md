@@ -1,6 +1,6 @@
 # Shriya Rajesh — Portfolio
 
-Welcome to my personal portfolio website    
+Welcome to my personal portfolio website.    
 This site highlights my work in **AI, software engineering, and systems development**.
 
  Live Site: https://shriya-r.github.io/  
@@ -55,11 +55,11 @@ I enjoy building scalable systems and applying machine learning to real-world pr
   - Built AWS-based backend systems integrating Jira APIs with OAuth 2.0
   - Improved maintainability through modular, class-based design  
 
-- **Researcher @ USC**
+- **Researcher @ Vilesov Group**
   - Enhanced LabVIEW-based data acquisition systems
   - Implemented signal processing and debugging for spectroscopy systems  
 
-- **AI / Systems Work @ CollabAuditAI**
+- **Intern @ CollabAuditAI**
   - Developed OCR pipelines and RAG-based LLM systems
   - Built distributed systems using RabbitMQ and .NET  
 
