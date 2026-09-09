@@ -78,7 +78,7 @@ AWS, Machine Learning, Distributed Systems, Full-Stack Development, IoT
 ## Education
 
 **University of Southern California (USC)**  
-B.S. Computer Engineering & Computer Science (2027)  
+B.S. Computer Engineering & Computer Science (2026)  
 M.S. Computer Science (2027)  
 
 - Presidential Scholar, Viterbi School of Engineering  
