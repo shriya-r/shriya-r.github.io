@@ -1,214 +1,481 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Shriya Rajesh | Software Engineer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0d1117;
+      --panel: #161b22;
+      --text: #e6edf3;
+      --muted: #9ca3af;
+      --line: #30363d;
+      --blue: #58a6ff;
+      --purple: #a78bfa
+    }
 
-<title>Shriya Rajesh | Software Engineer</title>
+    * {
+      box-sizing: border-box
+    }
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    html {
+      scroll-behavior: smooth
+    }
 
-<style>
-body {
-  margin: 0;
-  font-family: 'Inter', sans-serif;
-  background: #0d1117;
-  color: #e6edf3;
-  line-height: 1.6;
-}
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 16px/1.65 Inter, sans-serif
+    }
 
-.hero {
-  text-align: center;
-  padding: 100px 20px 60px;
-}
+    a {
+      color: var(--blue)
+    }
 
-.hero h1 {
-  font-size: 3.5rem;
-}
+    a:hover {
+      color: #8bc3ff
+    }
 
-.hero span {
-  background: linear-gradient(90deg, #60a5fa, #a78bfa);
-  -webkit-background-clip: text;
-  color: transparent;
-}
+    .hero {
+      text-align: center;
+      padding: 90px 20px 55px;
+      background: radial-gradient(circle at top, rgba(88, 166, 255, .14), transparent 48%)
+    }
 
-.hero p {
-  color: #9ca3af;
-  margin-top: 10px;
-  font-size: 18px;
-}
+    h1 {
+      margin: 0;
+      font-size: clamp(2.7rem, 8vw, 4.6rem);
+      line-height: 1.1
+    }
 
-.container {
-  max-width: 900px;
-  margin: auto;
-  padding: 20px;
-}
+    .gradient {
+      background: linear-gradient(90deg, #60a5fa, var(--purple));
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent
+    }
 
-h2 {
-  margin-top: 50px;
-  margin-bottom: 15px;
-  font-size: 1.4rem;
-  border-bottom: 1px solid #30363d;
-  padding-bottom: 5px;
-}
+    .tagline {
+      max-width: 750px;
+      margin: 18px auto;
+      color: var(--muted);
+      font-size: 1.1rem
+    }
 
-.project {
-  border: 1px solid #30363d;
-  border-radius: 10px;
-  padding: 18px;
-  margin-bottom: 15px;
-  transition: 0.2s;
-}
+    .contact {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px 18px
+    }
 
-.project:hover {
-  border-color: #58a6ff;
-  background: rgba(88,166,255,0.05);
-}
+    .contact a {
+      text-decoration: none
+    }
 
-.project a {
-  color: inherit;
-  text-decoration: none;
-  display: block;
-}
+    main {
+      max-width: 1040px;
+      margin: auto;
+      padding: 20px 24px 70px
+    }
 
-.project h3 {
-  margin: 0;
-}
+    section {
+      scroll-margin-top: 20px
+    }
 
-.links {
-  font-size: 14px;
-  margin-top: 8px;
-}
+    h2 {
+      margin: 55px 0 20px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--line);
+      font-size: 1.5rem
+    }
 
-.links a {
-  margin-right: 10px;
-  color: #58a6ff;
-}
+    h3 {
+      margin: 0;
+      font-size: 1.08rem
+    }
 
-.item {
-  margin-bottom: 20px;
-}
+    p {
+      margin: 8px 0
+    }
 
-.item p {
-  margin: 5px 0;
-  color: #9ca3af;
-}
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px
+    }
 
-footer {
-  text-align: center;
-  padding: 30px;
-  color: #8b949e;
-}
-</style>
+    .card,
+    .item {
+      padding: 20px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: rgba(22, 27, 34, .72)
+    }
+
+    .item {
+      margin-bottom: 16px
+    }
+
+    .card {
+      transition: .2s
+    }
+
+    .card:hover {
+      transform: translateY(-2px);
+      border-color: var(--blue);
+      background: rgba(88, 166, 255, .05)
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 4px 14px;
+      color: var(--muted);
+      font-size: .92rem
+    }
+
+    .role {
+      color: #c9d1d9;
+      font-weight: 600
+    }
+
+    .card p,
+    .item p,
+    li {
+      color: var(--muted)
+    }
+
+    ul {
+      margin: 10px 0 0;
+      padding-left: 21px
+    }
+
+    li+li {
+      margin-top: 6px
+    }
+
+    .links {
+      display: flex;
+      gap: 14px;
+      margin-top: 13px;
+      font-size: .9rem
+    }
+
+    .links a {
+      text-decoration: none;
+      font-weight: 600
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px
+    }
+
+    .chip {
+      padding: 6px 11px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: var(--panel);
+      color: #c9d1d9;
+      font-size: .88rem
+    }
+
+    .publication {
+      border-left: 3px solid var(--purple)
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      border-top: 1px solid var(--line);
+      color: #8b949e
+    }
+
+    @media(max-width:720px) {
+      .hero {
+        padding-top: 65px
+      }
+
+      .grid {
+        grid-template-columns: 1fr
+      }
+
+      main {
+        padding-inline: 18px
+      }
+
+    }
+  </style>
 </head>
 
 <body>
+  <header class="hero">
+    <img src="Shriya.jpg" alt="Shriya Rajesh" width="180" height="180" style="
+    margin: 20px;
+    object-fit: cover;
+    border-radius: 50%;
+    object-position: center 25%;
+  ">
+    <h1><span class="gradient">Shriya Rajesh</span></h1>
+    <p class="tagline">Computer Engineer and Computer Scientist focused on AI/ML, scalable systems, and full-stack
+      development.</p>
+    <div class="contact">
+      <a href="mailto:srajesh@usc.edu">srajesh@usc.edu</a><a href="https://github.com/shriya-r" target="_blank"
+        rel="noopener">GitHub</a><a href="https://linkedin.com/in/shriyarajesh/" target="_blank"
+        rel="noopener">LinkedIn</a>
+    </div>
+  </header>
+  <main>
+    <section id="education">
+      <h2>Education</h2>
+      <article class="item">
+        <div class="meta">
+          <h3>University of Southern California</h3><span>Los Angeles, CA</span>
+        </div>
+        <p><span class="role">M.S. Computer Science</span></p>
+        <p><span class="role">B.S. Computer Engineering and Computer Science</span> · December 2026</p>
+        <p>Presidential Scholar, Viterbi School of Engineering</p>
+      </article>
+      <article class="item">
+        <div class="meta">
+          <h3>College of the Canyons</h3><span>Santa Clarita, CA · June 2023</span>
+        </div>
+        <p class="role">Associate Degrees</p>
+        <ul>
+          <li>A.S. Computer Science for Transfer</li>
+          <li>A.S. Physics for Transfer</li>
+          <li>A.S. Mathematics for Transfer and A.S. Mathematics</li>
+          <li>A.A. Liberal Arts and Sciences — IGETC CSU Social and Behavioral Sciences</li>
+          <li>A.A. Liberal Arts and Sciences — IGETC CSU Mathematics and Science</li>
+        </ul>
+      </article>
+      <article class="item publication">
+        <h3>Publication</h3>
+        <p>Rajesh, Shriya. “Through RAG Comes Revolution: Efficient &amp; Accurate AI.” <em>Illumin Magazine</em>,
+          December 2025.</p>
+        <div class="links"><a href="https://illumin.usc.edu/through-rag-comes-revolution-efficient-accurate-ai/"
+            target="_blank" rel="noopener">Read publication</a></div>
+      </article>
+      <article class="item">
+        <h3>Relevant Coursework</h3>
+        <p>Digital Circuits · Internetworking · Machine Learning · Distributed Systems for the Internet
+          of Things · Data Structures and Object-Oriented Design · Full-Stack Web Development · Principles of Software
+          Development · Algorithms and Theory of Computing · Embedded Systems</p>
+      </article>
+    </section>
 
-<section class="hero">
-  <h1><span>Shriya Rajesh</span></h1>
-  <p>Software Engineer focused on AI, Machine Learning, and Scalable Systems</p>
-  <p>
-    <a href="https://github.com/shriya-r">GitHub</a> |
-    <a href="https://linkedin.com/in/shriyarajesh/">LinkedIn</a> |
-    <a href="mailto:srajesh@usc.edu">Email</a>
-  </p>
-</section>
+    <section id="experience">
+      <h2>Experience</h2>
+      <article class="item">
+        <div class="meta">
+          <h3>Vilesov Group — Infrared Spectroscopy</h3><span>Sep 2025 – Present</span>
+        </div>
+        <p class="role">Researcher · Los Angeles, CA</p>
+        <ul>
+          <li>Enhanced LabVIEW control and acquisition software with timestamped data, configurable scanning and
+            sampling, oscilloscope integration, saved parameters, and UI improvements.</li>
+          <li>Designed an HDF5 pipeline for CCD images, time-of-flight data, pulses, run/hit IDs, and metadata; built
+            readers and visualization tools.</li>
+          <li>Implemented averaging, polynomial and spline fitting, piecewise calibration, and wavenumber-based cursor
+            placement.</li>
+          <li>Supported Linux-based remote beamtime processing and debugged laser, TCP, COM-port, USB/Ethernet, vacuum,
+            and helium leak-testing issues.</li>
+        </ul>
+      </article>
+      <article class="item">
+        <div class="meta">
+          <h3>Next Generation Digital Systems</h3><span>Sep 2023 – Present</span>
+        </div>
+        <p class="role">Researcher · Los Angeles, CA</p>
+        <ul>
+          <li>Profiled C++ programs and MiniSAT with gprof, Callgrind, and instrumentation to locate bottlenecks and
+            measure function-level runtime.</li>
+          <li>Analyzed unit propagation, conflicts, decisions, restarts, backtracking, and learned clauses across SAT
+            benchmarks.</li>
+          <li>Optimized SAT heuristics with backtracking and unit propagation to substantially reduce runtime.</li>
+          <li>Built a Python tool to analyze multidimensional packing structures and maximize packing density.</li>
+        </ul>
+      </article>
+      <article class="item">
+        <div class="meta">
+          <h3>Silhouette</h3><span>Sep 2025 – Dec 2025</span>
+        </div>
+        <p class="role">Software Developer · Remote</p>
+        <ul>
+          <li>Automated Jira issue management using OAuth 2.0 and Atlassian REST APIs.</li>
+          <li>Built a Python backend with JSON, AWS Lambda, and API Gateway, supporting read/update access while
+            removing delete permissions.</li>
+          <li>Refactored the app into maintainable classes, debugged with CloudWatch Logs, and prototyped an
+            HTML/JavaScript frontend.</li>
+          <li>Authored reproducible documentation and served as rotating project manager for stakeholder sprint
+            delivery.</li>
+        </ul>
+      </article>
+      <article class="item">
+        <div class="meta">
+          <h3>CollabAuditAI</h3><span>May 2024 – Sep 2025</span>
+        </div>
+        <p class="role">Intern · Remote</p>
+        <ul>
+          <li>Engineered scanned-PDF OCR with PDFium and Tesseract in CI/CD and a durable RabbitMQ/.NET messaging
+            system.</li>
+          <li>Integrated GPT-4 with Semantic Kernel and built a Python RAG prototype with Hugging Face, later migrating
+            to Nexa AI for CPU compression.</li>
+          <li>Designed and ran 100+ functional and UI tests and debugged edge cases.</li>
+          <li>Documented AWS deployment across EC2, VPC, MySQL, ECR, Docker, EKS, and load balancers, cutting onboarding
+            time by over 55%.</li>
+        </ul>
+      </article>
+      <article class="item">
+        <div class="meta">
+          <h3>Cisco High School Externship</h3><span>Jun 2022 – Jul 2022</span>
+        </div>
+        <p class="role">Extern · Remote</p>
+        <p>Explored technology improvements for public transit while collaborating with a 10-person team across multiple
+          time zones.</p>
+      </article>
+    </section>
 
-<div class="container">
-
-  <h2>Projects</h2>
-
-  <div class="project">
-    <a href="https://github.com/shriya-r/VerilogProject">
-      <h3>Whack-a-Mole FPGA Game</h3>
-      <p>
-        Designed and implemented a hardware-based game on a Nexys A7 FPGA using finite state machines, hardware timers, and VGA output for real-time gameplay. 
-        Implemented randomized mole placement using LFSR and debounced inputs for accurate scoring.
-      </p>
-    </a>
-  </div>
-
-  <div class="project">
-    <a href="https://www.youtube.com/watch?v=jvdanU06gVg">
-      <h3>SoLyr (IoT Music Recognition)</h3>
-      <p>
-        Built an end-to-end IoT system that identifies songs from sung lyrics using Web Speech API and real-time WebSocket communication for server-side analysis.
-      </p>
-    </a>
-  </div>
-
-  <div class="project">
-    <a href="https://github.com/csci201team25/Campfire">
-      <h3>Campfire</h3>
-      <p>
-        Developed a scheduling platform that compares availability and suggests optimal meeting times and locations, with secure authentication and full-stack implementation.
-      </p>
-      <div class="links">
-        <a href="https://github.com/csci201team25/Campfire">GitHub</a>
-        <a href="https://www.youtube.com/watch?v=-K7YL43oxQQ">Demo</a>
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <div class="meta">
+            <h3>Risk Factor</h3><span>May 2026</span>
+          </div>
+          <p class="role">Full-Stack Developer · VenusHacks</p>
+          <p>Co-developed a postpartum triage simulation with C#, ASP.NET API, HTML, CSS, and JavaScript. Integrated
+            randomized patients, symptoms, scoring, progressive difficulty, and win/loss state using California
+            Department of Public Health research.</p>
+          <div class="links"><a href="https://github.com/shriya-r/RiskFactor" target="_blank"
+              rel="noopener">GitHub</a><a href="https://devpost.com/software/risk-factor" target="_blank"
+              rel="noopener">Devpost</a></div>
+        </article>
+        <article class="card">
+          <div class="meta">
+            <h3>Whack-a-Mole FPGA Game</h3><span>Nov 2025 – Dec 2025</span>
+          </div>
+          <p class="role">Electrical Engineer</p>
+          <p>Built a Verilog game for the Nexys A7 with an FSM, timers, VGA graphics, LFSR randomized placement,
+            debounced inputs, timeout logic, animated win effects, and edge-case testing.</p>
+          <div class="links"><a href="https://github.com/shriya-r/VerilogProject" target="_blank"
+              rel="noopener">GitHub</a></div>
+        </article>
+        <article class="card">
+          <div class="meta">
+            <h3>AI Image Upscaling</h3><span>Oct 2025 – Dec 2025</span>
+          </div>
+          <p class="role">Engineer</p>
+          <p>Implemented EDSR with residual blocks, PixelShuffle, and L1 loss. Compared bicubic interpolation, ESPCN,
+            ESRGAN, and EDSR using PSNR to assess accuracy, variance, perceptual quality, reliability, and overfitting.
+          </p>
+        </article>
+        <article class="card">
+          <div class="meta">
+            <h3>SoLyr</h3><span>Apr 2025 – May 2025</span>
+          </div>
+          <p class="role">IoT Engineer</p>
+          <p>Built a two-node IoT system that recognizes songs from sung lyrics and measures lyric accuracy using Web
+            Speech API and WebSocket/TCP communication.</p>
+          <div class="links"><a href="https://www.youtube.com/watch?v=jvdanU06gVg" target="_blank"
+              rel="noopener">Demo</a></div>
+        </article>
+        <article class="card">
+          <div class="meta">
+            <h3>Campfire</h3><span>Mar 2025 – May 2025</span>
+          </div>
+          <p class="role">Team Lead</p>
+          <p>Developed a web scheduling platform that compares calendars and recommends shared meeting times and
+            locations. Built the login UI and integrated secure backend authentication.</p>
+          <div class="links"><a href="https://github.com/csci201team25/Campfire" target="_blank"
+              rel="noopener">GitHub</a><a href="https://www.youtube.com/watch?v=-K7YL43oxQQ" target="_blank"
+              rel="noopener">Demo</a></div>
+        </article>
+        <article class="card">
+          <div class="meta">
+            <h3>FireCheck</h3><span>Mar 2025</span>
+          </div>
+          <p class="role">Software Engineer · AthenaHacks</p>
+          <p>Spearheaded a four-person web app that predicts fire likelihood from real-time Visual Crossing weather
+            data. Won Best Use of AI powered by Reach Capital.</p>
+          <div class="links"><a href="https://github.com/shriya-r/AthenaHacks2025-FireCheck" target="_blank"
+              rel="noopener">GitHub</a><a href="https://devpost.com/software/firecheck-ekjqb3" target="_blank"
+              rel="noopener">Devpost</a></div>
+        </article>
+        <article class="card">
+          <div class="meta">
+            <h3>SketchTune</h3><span>Nov 2024</span>
+          </div>
+          <p class="role">Developer · HackSC</p>
+          <p>Built a TypeScript app using Claude and Anthropic API to infer mood from drawings and recommend music
+            through DAIN Butterfly. Placed third for DAIN chatbot use and earned an honorable mention for the Artists
+            category.</p>
+          <div class="links"><a href="https://github.com/shriya-r/HackSC-DAIN-Implementation" target="_blank"
+              rel="noopener">GitHub</a><a href="https://devpost.com/software/sketchtune" target="_blank"
+              rel="noopener">Devpost</a></div>
+        </article>
       </div>
-    </a>
-  </div>
+    </section>
 
-  <div class="project">
-    <a href="https://github.com/shriya-r/AthenaHacks2025-FireCheck">
-      <h3>FireCheck (Hackathon Project)</h3>
-      <p>
-        Built an AI-powered fire prediction tool using real-time weather data APIs; won Best Use of AI at AthenaHacks.
-      </p>
-      <div class="links">
-        <a href="https://github.com/shriya-r/AthenaHacks2025-FireCheck">GitHub</a>
-        <a href="https://devpost.com/software/firecheck-ekjqb3">Devpost</a>
+    <section id="leadership">
+      <h2>Leadership</h2>
+      <article class="item">
+        <div class="meta">
+          <h3>AthenaHacks</h3><span>Sep 2025 – May 2026</span>
+        </div>
+        <p><span class="role">Programs Organizer:</span> Managed Devpost, provided GitHub support, coordinated sponsor
+          judging, supported workshops and company representatives, supervised participants, and adapted schedules to
+          improve attendance and operations for a hackathon serving marginalized gender identities.</p>
+      </article>
+      <article class="item">
+        <div class="meta">
+          <h3>SpatialSC</h3><span>Jan 2024 – May 2025</span>
+        </div>
+        <p><span class="role">Vice President of Finance:</span> Led financial initiatives and vendor partnerships and
+          managed a six-person team developing an augmented-reality crowdsourcing application.</p>
+      </article>
+      <article class="item">
+        <div class="meta">
+          <h3>Math Circle</h3><span>Jan 2018 – Jun 2023</span>
+        </div>
+        <p><span class="role">Co-Lead Instructor, UCLA Olga Radko Endowed Math Circle:</span> Taught problem-solving to
+          classes of 25+ students.</p>
+        <p><span class="role">Vice President, Agoura Math Circle:</span> Mentored students and designed interactive
+          material for classes of up to 100.</p>
+      </article>
+      <article class="item">
+        <div class="meta">
+          <h3>Project 691 Robotics</h3><span>Aug 2021 – Jun 2022</span>
+        </div>
+        <p><span class="role">Business Director:</span> Managed a three-person team, delegated work, revised the
+          website, updated social media, and assembled the business plan.</p>
+      </article>
+    </section>
+
+    <section id="skills">
+      <h2>Technical Skills</h2>
+      <div class="chips">
+        <span class="chip">Python</span><span class="chip">C++</span><span class="chip">Java</span><span
+          class="chip">C#</span><span class="chip">JavaScript</span><span class="chip">TypeScript</span><span
+          class="chip">HTML</span><span class="chip">CSS</span><span class="chip">MySQL</span><span
+          class="chip">PHP</span><span class="chip">Verilog</span><span class="chip">VGA</span><span
+          class="chip">LabVIEW</span><span class="chip">AWS</span><span class="chip">Machine Learning</span><span
+          class="chip">RAG / LLMs</span><span class="chip">Distributed Systems</span><span class="chip">Embedded
+          Systems</span><span class="chip">RabbitMQ</span><span class="chip">.NET</span>
       </div>
-    </a>
-  </div>
-
-  <div class="project">
-    <a href="https://github.com/shriya-r/HackSC-DAIN-Implementation">
-      <h3>SketchTune</h3>
-      <p>
-        Developed an application that analyzes drawings using the Claude model and recommends music based on inferred mood; awarded 3rd place and honorable mentions.
-      </p>
-      <div class="links">
-        <a href="https://github.com/shriya-r/HackSC-DAIN-Implementation">GitHub</a>
-        <a href="https://devpost.com/software/sketchtune">Devpost</a>
-      </div>
-    </a>
-  </div>
-
-  <h2>Experience</h2>
-
-  <div class="item">
-    <strong>Software Developer — Silhouette</strong>
-    <p>
-      Built AWS-based backend integrating Jira APIs with OAuth 2.0, implemented secure role-based access, and refactored codebase for maintainability. Debugged using CloudWatch and deployed via Lambda + API Gateway.
-    </p>
-  </div>
-
-  <div class="item">
-    <strong>Researcher — Vilesov Group (Infrared Spectroscopy)</strong>
-    <p>
-      Enhanced LabVIEW-based data acquisition systems with configurable scan speeds, signal processing, and real-time debugging of hardware limitations including TCP and COM port issues.
-    </p>
-  </div>
-
-  <div class="item">
-    <strong>Researcher — Next Generation Digital Systems</strong>
-    <p>
-      Optimized SAT-solving heuristics using backtracking and unit propagation, and profiled performance using gprof to reduce computational overhead.
-    </p>
-  </div>
-
-  <h2>Skills</h2>
-  <p>
-    Python, C++, JavaScript, TypeScript, Java, SQL, AWS, Machine Learning, Distributed Systems, Embedded Systems
-  </p>
-
-</div>
-
-<footer>
-  <p>© 2026 Shriya Rajesh</p>
-</footer>
-
+    </section>
+    <section id="languages">
+      <h2>Languages</h2>
+      <p>English (Native) · Tamil (Fluent) · Spanish (Elementary)</p>
+    </section>
+  </main>
+  <footer>© 2026 Shriya Rajesh</footer>
 </body>
+
 </html>
